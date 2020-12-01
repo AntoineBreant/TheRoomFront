@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+}
+body {
+    background: black;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.transparent {
+    background: none !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.bw1 {
+    border-width: 1px !important;
+}
+.bw2 {
+    border-width: 2px !important;
+}
+.mr1 {
+    margin-right: 10px !important;
+}
+.mr2 {
+    margin-right: 20px !important;
+}
+.mr3 {
+    margin-right: 30px !important;
+}
+
+.mt2 {
+    margin-top: 20px !important;
+}
+
+img.cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1.6fr;
+    grid-template-rows: 1.9fr;
+    gap: 0px 0px;
+    grid-template-areas: "left-container right-container";
+}
+
+/**
+Gauche
+*/
+.left-container {
+    grid-area: left-container;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.header-logo {
+    background: url(images/logo.png) no-repeat;
+    width: 482px;
+    height: 40px;
+    background-size: 30%;
+}
+.search-bar {
+    width:100%;
+    background: #272727;
+    color: #707070;
+    border: none;
+    /* border-radius: 40px; */
+    padding: 25px 20px;
+    font-size: 1.5em;
+}
+.block {
+    border-radius: 40px;
+    background: #1D1D1D;
+    padding: 10px 40px 30px 40px;
+    text-align: center;
+    position: relative;
+}
+.block.border {
+    border:5px solid #141414;
+}
+.block-title {
+    text-align: left;
+}
+.round {
+    background: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 8px solid #707070;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/**
+Catégories
+*/
+.categorie {
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+/**
+Coups de coeur
+*/
+.fav-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+}
+.fav-container > *:not(h2) {
+    flex: 1 1 1;
+    margin: 20px 20px 20px 0px;
+}
+.fav-container h2 {
+    width: 100%;
+    margin-bottom: -5px;
+}
+.fav-container:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+.fav-container .block {
+    width:26.5%;
+}
+
+/**
+A la une
+*/
+.une-container img {
+    /* width: 450px; */
+    object-fit: cover;
+}
+
+/** 
+Actualités
+*/
+.news-container > * {
+    margin-bottom: 30px;
+}
+
+.news-container .block {
+    background: none;
+    border:3px solid #1D1D1D;
+}
+
+/**
+Droite
+*/
+.right-container {
+    grid-area: right-container;
+    grid-template-areas: "title-artists artists title-agenda agenda";
+    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.5fr;
+    display: grid;
+    position: fixed;
+    right: 0;
+    width: 34.7%;
+    height: 100%;
+}
+
+.title-artists {
+    background:url(images/artistes-title.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: title-artists;
+    height:100vh;
+}
+
+.right-container .artists {
+    grid-area: artists;
+    position: relative;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.right-container .artists .block {
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+.right-container .artists .block:hover img {
+    transition: .3s ease;
+    opacity: 0.3;
+}
+.right-container .artists .block:hover .middle {
+    opacity: 1;
+}
+
+.right-container .artists .middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.right-container .artists .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.right-container .title-agenda {
+    grid-area: title-agenda;
+    background:url(images/agenda-title.png) no-repeat;
+    background-size: contain;
+    height:100vh;
+}
+
+.right-container .agenda {
+    grid-area: agenda;
+    margin-right: 20px;
+}
+.right-container .agenda .block {
+    text-align: left;
+}
