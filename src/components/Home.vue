@@ -4,8 +4,9 @@
             <header style="font-size: 2em;">
                 <div class="header-logo"></div>
                 <div>
-                    <i class="fas fa-search"></i>
-                    &nbsp;&nbsp;<i class="fas fa-bars"></i>
+                    <!-- <i class="fas fa-search"></i> -->
+                    <font-awesome-icon icon="search" />
+                    &nbsp;&nbsp;<font-awesome-icon icon="bars" />
                 </div>
             </header>
 
@@ -71,6 +72,30 @@
                 </div>
                 <div class="block transparent mt2" data-content="Text">
                     <img src="https://res.cloudinary.com/we-are-theroom/image/upload/v1606833186/home/117891462_4339387219436763_2343364841333204921_n_ffm1co.jpg" alt="" class="cover" data-content="Text">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
+                    </div>
+                </div>
+                <div class="block transparent mt2" data-content="Text">
+                    <img src="https://res.cloudinary.com/we-are-theroom/image/upload/v1606835385/home/77189588_462307901329607_3317275609188674973_n_qdfswo.jpg" alt="" class="cover" data-content="Text">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
+                    </div>
+                </div>
+                <div class="block transparent mt2" data-content="Text">
+                    <img src="https://res.cloudinary.com/we-are-theroom/image/upload/v1606835385/home/116771318_301437090935956_4642015182533997783_n_da1vi8.jpg" alt="" class="cover" data-content="Text">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
+                    </div>
+                </div>
+                <div class="block transparent mt2" data-content="Text">
+                    <img src="https://res.cloudinary.com/we-are-theroom/image/upload/v1606835367/home/109261971_3343235225697507_2778008202878554470_n_jsicui.jpg" alt="" class="cover" data-content="Text">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
+                    </div>
+                </div>
+                <div class="block transparent mt2" data-content="Text">
+                    <img src="https://res.cloudinary.com/we-are-theroom/image/upload/v1606835385/home/72634631_113030523258240_5982970517745353709_n_fwomxa.jpg" alt="" class="cover" data-content="Text">
                     <div class="middle">
                         <div class="text">John Doe</div>
                     </div>
